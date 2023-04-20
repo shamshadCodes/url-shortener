@@ -8,7 +8,7 @@ mongoose.connect('mongodb://127.0.0.1/urlShortener', {
 })
 const db = mongoose.connection
 
-db.on('error', error => console.log("Something wen wrong \n", error))
+db.on('error', error => console.log("Something went wrong \n", error))
 
 db.once('open', () => console.log("Connected to Mongoose"))
 
